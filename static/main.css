@@ -10,7 +10,7 @@ html, body {
 
 
 .contentA .card-body{
-    background-color:rgb(18, 196, 124);
+    background-color:#606C38;
 }
 
 
@@ -52,7 +52,7 @@ html, body {
 }
 
 .input-group .predict-btn {
-	background-color: rgb(18, 196, 124);
+	background-color: #606C38;
 	border: 0;
 	font-weight: 500;
 	border-radius: 0 40px 40px 0 !important;
@@ -147,7 +147,7 @@ a.nav-link:after {
   height: 2px;
   left: 50%;
   position: relative;
-  background: rgb(18, 196, 124);
+  background: #606C38;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
