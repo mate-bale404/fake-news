@@ -4,7 +4,8 @@ html, body {
   font-size:100%;
   padding:0%;
   position: relative;
-  background-color:#e9ecef
+  background-color:#e9ecef;
+  overflow: hidden;
 }
 
 
@@ -16,7 +17,7 @@ html, body {
   .navbar-brand {
     font-size: 25px !important;
     margin-right: 1rem !important;
-    padding-top: 1rem !important;
+    /* padding-top: 1rem !important; */
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -25,11 +26,17 @@ html, body {
     padding-bottom: 1rem;
     padding-right: 2rem;
   }
-  
-
+.font-navbar{
+  font-size: 25px;
+  font-weight: bolder;
+}
+.navbar{
+  padding: 0;
+}
 .logo{
-  max-width: 100%;
+  max-width: 200px;
   height: auto;
+  margin-left: 10px;
 }
 
 .input-group:hover {
@@ -108,7 +115,7 @@ html, body {
 header.masthead {
   position: relative;
   background-color: #ffffff;
-  background: url("/static/assets/19742.jpg") no-repeat center center;
+  background: url("/static/assets/background1.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 30rem;
@@ -122,8 +129,8 @@ header.masthead .overlay {
   top: 0;
   left: 0;
   opacity: 0.2;
-  
-  
+
+
 }
 
 header.masthead h1 {
@@ -132,7 +139,7 @@ header.masthead h1 {
 }
 
 a.nav-link:after {
-  
+
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -144,9 +151,9 @@ a.nav-link:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a.nav-link:hover:after { 
-  width: 100%; 
-  left: 0; 
+a.nav-link:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 footer {
