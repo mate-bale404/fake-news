@@ -8,17 +8,18 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="display-2 text-center mb-3" >FAKE NEWS DETECTION </h1>
+            <h1 class="display-3 text-center mb-3" >HOAX NEWS DETECTION </h1>
             <!-- <p class="lead mb-30" style="color:black;"><b>Made By Wakey-Wakey </b></p> -->
           </div>
           <br><br><br><br><br>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <div class="d-flex justify-content-center">
-              <form id="form" method='POST' action='/' >
+              <form id="form">
                   <div class="input-group input-group-lg mb-3">
-                      <input type="text" class="form-control input-diff" placeholder="Input the News URL" type="text" name="url" value="{{request.form.url}}" required="required" />
+                      <input type="text" class="form-control input-diff" placeholder="Input the News URL" type="text" name="url" required="required" />
                       <div class="input-group-append">
-                      <!-- <input class="btn btn-primary btn-block btn-large predict-btn" style="height:3rem; border-radius:15px; margin-left: -30px; border:none; z-index:10;" type="submit" id="button-addon2" value="Submit"></input> -->
+
+                      <!-- <input class="btn btn-primary btn-block btn-large predict-btn" style="height:3rem; border-radius:15px; margin-left: -30px; border:none; z-index:10;" value="{{request.form.url}} type="submit" id="button-addon2" value="Submit"></input> -->
                       <button class="btn btn-block btn-large predict-btn text-white"id="button-addon2"><i class="fas fa-search"></i></button>
                       </div>
                   </div>
