@@ -39,51 +39,51 @@
     ></script>
   </head>
 
-  <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="{{url_for('home')}}"
-        ><img
-          src="{{ url_for('static', filename='assets/newlogo.png') }}"
-          class="logo"
-          alt=""
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Nav Link Start -->
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('home')}}"
-              ><div class="font-navbar">Home</div></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('news_feed')}}"
-              ><div class="font-navbar">News Feed</div></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{url_for('about_us')}}"
-              ><div class="font-navbar">About Us</div>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!-- Nav Link End -->
-    </div>
-  </nav>
-  <!-- Navbar End -->
   <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{{url_for('home')}}"
+          ><img
+            src="{{ url_for('static', filename='assets/newlogo.png') }}"
+            class="logo"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav Link Start -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('home')}}"
+                ><div class="font-navbar">Home</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('news_feed')}}"
+                ><div class="font-navbar">News Feed</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('about_us')}}"
+                ><div class="font-navbar">About Us</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Nav Link End -->
+      </div>
+    </nav>
+    <!-- Navbar End -->
     <!-- Change Display Start -->
     {% block contentA %} {% endblock contentA %} {% block contentB %} {%
     endblock contentB %} {% block contentC %} {% endblock contentC %} {% block
