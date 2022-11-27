@@ -61,10 +61,6 @@ ol li:before {
   height: auto;
   margin-left: 10px;
 }
-
-/* .display-2{
-  font-size: 60px !important;
-} */
 .input-group:hover {
 	transform: translateY(-2px);
 	-moz-transform: translateY(-2px);
@@ -250,26 +246,3 @@ color: #aad129;
   }
 }
 
-@media (max-width:480px){
-  .input-diff{
-    width: 15rem !important;
-  }
-}
-@media (max-width:320px){
-  .navbar-toggler{
-    margin-bottom: 10px ;
-    width: 100% ;
-  }
-  .input-diff{
-    width: 10rem !important;
-  }
-}
-@media (max-width:240px){
-  .input-diff{
-    width: 7rem !important;
-  }
-  .predict-btn{
-    margin-top: 10px;
-    width: 170px !important;
-  }
-}
