@@ -28,6 +28,10 @@
       integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
     <!-- CSS file -->
     <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}" />
@@ -42,12 +46,13 @@
 
   <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-diff" id="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="{{url_for('home')}}"
           ><img
             src="{{ url_for('static', filename='assets/newlogo.png') }}"
             class="logo"
+            id="logo"
             alt=""
         /></a>
         <button
@@ -66,19 +71,20 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="{{url_for('home')}}"
-                ><div class="font-navbar">Home</div></a
+                ><div class="font-navbar" id="font-navbar">Home</div></a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{url_for('news_feed')}}"
-                ><div class="font-navbar">News Feed</div></a
+                ><div class="font-navbar" id="font-navbar">News Feed</div></a
               >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="{{url_for('about_us')}}"
-                ><div class="font-navbar">About Us</div>
+                ><div class="font-navbar" id="font-navbar">About Us</div>
               </a>
             </li>
+            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
           </ul>
         </div>
         <!-- Nav Link End -->
