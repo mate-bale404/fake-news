@@ -9,52 +9,18 @@ body {
   background-color: #e9ecef;
   font-family: "Poppins", sans-serif;
 }
-
-/* Navbar Base Start */
-.navbar {
-  background-color: #f1f3f5;
-  padding: 0;
+.input-diff {
+  height: 3rem;
+  width: 33rem !important;
+  border-radius: 15px;
+  border: none;
 }
-
-.navbar-brand {
-  font-size: 25fpx !important;
-  margin-right: 1rem !important;
+.input-diff:focus {
+  border: 2px solid #606c38 !important;
+  -webkit-box-shadow: 0px 0px 8px #606c38 !important;
+  -moz-box-shadow: 0px 0px 8px #606c38 !important;
+  box-shadow: 0px 0px 8px #606c38 !important;
 }
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-left: 1.5rem !important;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1.5rem;
-}
-a.nav-link:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: relative;
-  background: #606c38;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a.nav-link:hover:after {
-  color: #606c38;
-  width: 100%;
-  left: 0;
-}
-.font-navbar {
-  font-size: 22px;
-  font-weight: bolder;
-}
-.logo {
-  max-width: 160px;
-  height: auto;
-  margin-left: 10px;
-}
-/* Navbar Base End */
-
 header.masthead {
   position: relative;
   background-color: #ffffff;
@@ -85,7 +51,6 @@ header.masthead .overlay {
 	width: 50%; */
 }
 
-/* Home Start */
 header.masthead h1 {
   z-index: 2;
   font-weight: bolder;
@@ -97,13 +62,57 @@ header.masthead h1 {
                  0px 24px 2px rgba(0,0,0,0.1),
                  0px 34px 30px rgba(0,0,0,0.1); */
 }
+a.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: #606c38;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a.nav-link:hover:after {
+  color: #606c38;
+  width: 100%;
+  left: 0;
+}
+
 .contentA .card-body {
   background-color: #606c38;
+}
+.navbar {
+  background-color: #f1f3f5;
 }
 .container-fluid {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   z-index: 10;
+}
+.navbar-brand {
+  font-size: 25fpx !important;
+  margin-right: 1rem !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 1.5rem !important;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+}
+.font-navbar {
+  font-size: 22px;
+  font-weight: bolder;
+}
+.navbar {
+  padding: 0;
+}
+.logo {
+  max-width: 160px;
+  height: auto;
+  margin-left: 10px;
 }
 .input-group:hover {
   transform: translateY(-2px);
@@ -136,9 +145,8 @@ header.masthead h1 {
   padding: 1rem;
   text-indent: 10px;
 }
-/* Home End */
 
-/* News Feed Start */
+/* News Feed */
 .title-news-feed {
   margin-top: 15px;
   text-align: center;
@@ -148,7 +156,7 @@ header.masthead h1 {
 }
 /* News Feed End */
 
-/* About Us  Start */
+/* About Us CSS Start */
 .title-about-us {
   text-align: center;
 }
@@ -232,9 +240,9 @@ ol li:before {
 .hoax-text {
   color: #606c38;
 }
-/* About Us  End */
+/* About Us CSS End */
 
-/* Footer  Start */
+/* Footer CSS Start */
 footer {
   position: relative;
   left: 0;
@@ -248,7 +256,7 @@ footer {
 .copyright:hover {
   zoom: 110%;
 }
-/* Footer  End */
+/* Footer CSS End */
 
 /* Responsive Start */
 @media (max-width: 995px) {
@@ -265,6 +273,9 @@ footer {
   }
 }
 @media (max-width: 480px) {
+  .fa {
+    display: none;
+  }
   .input-diff {
     width: 15rem !important;
   }
